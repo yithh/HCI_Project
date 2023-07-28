@@ -1,0 +1,119 @@
+.product-section{
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(./../src/product.jpg);
+}
+
+.logo-product {
+  display: flex;
+  align-items: center;
+}
+
+.logo-product img {
+  width: 90px;
+  height: 90px;
+  margin-right: 40px;
+  margin-left: 20px;
+  border-radius: 20px;
+  transition: ease-out 300ms;
+}
+
+.logo-product img:hover{
+  transform: scale(1.1);
+}
+
+.image-scroll {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  white-space: nowrap;
+  cursor: grab;
+}
+
+.image-scroll:active {
+  cursor: grabbing;
+}
+
+.image-description:active{
+  cursor: grabbing;
+}
+
+.image-container {
+  position: relative;
+  margin-right: 10px;
+  overflow: visible;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  padding-left: 20px;
+  margin-top: 30px;
+  width: 150px;
+  height: 240px;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.product-box .image-description {
+  display: none;
+  cursor: move;
+}
+
+.image-description{
+  margin-right: -45px;
+  margin-left: 10px;
+}
+
+.product-box span {
+  margin-top: 45px;
+  display: inline-block;
+  width: 270px;
+  height: 250px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.303);
+  overflow: auto;
+  white-space: normal;
+  color: aliceblue;
+  border-radius: 0% 5% 5% 0%;
+}
+
+.product-box span p{
+  font-size: 12px;
+}
+
+.product-box span h2{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.product-box span h3{
+  font-size: 15px;
+}
+
+.product-box {
+  flex-basis: 100%;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 100%;
+  max-height: 100%;
+}
